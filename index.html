@@ -1,0 +1,67 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemSphere | Chemistry in Daily Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: radial-gradient(circle at 50% 50%, #0d1527 0%, #040814 100%); min-height: 100vh; color: #f3f4f6; font-family: system-ui, sans-serif; overflow-x: hidden; }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.07); border-radius: 24px; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s; transform-style: preserve-3d; perspective: 1000px; }
+        .glass-card:hover { transform: translateY(-10px) rotateX(4deg) rotateY(4deg); border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+        .glow-text { text-shadow: 0 0 20px rgba(59, 130, 246, 0.6); }
+        .glow-green { text-shadow: 0 0 20px rgba(16, 185, 129, 0.6); }
+        .nav-link { position: relative; transition: color 0.3s; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #3b82f6; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="flex flex-col">
+    <nav class="sticky top-0 z-50 px-8 py-4 bg-[#040814]/80 backdrop-blur-md border-b border-white/5 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-wider text-blue-400 glow-text">Chem<span class="text-emerald-400 glow-green">Sphere</span></div>
+        <div class="flex gap-8 font-medium">
+            <a href="index.html" class="nav-link text-blue-400">Home</a>
+            <a href="chemicals.html" class="nav-link text-gray-300 hover:text-white">200 Chemicals</a>
+            <a href="quiz.html" class="nav-link text-gray-300 hover:text-white">Interactive Quiz</a>
+            <a href="about.html" class="nav-link text-gray-300 hover:text-white">About Us</a>
+        </div>
+    </nav>
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-16 text-center flex flex-col justify-center items-center">
+        <div class="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] top-1/4 left-1/4 -z-10"></div>
+        <div class="absolute w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] bottom-1/4 right-1/4 -z-10"></div>
+        <h1 class="text-6xl md:text-7xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-500 bg-clip-text text-transparent">The Hidden Chemistry<br><span class="from-blue-400 to-emerald-400 bg-gradient-to-r bg-clip-text text-transparent glow-text">In Your Daily Life</span></h1>
+        <p class="text-xl text-gray-400 max-w-3xl mb-12 leading-relaxed">Every product you touch, food you eat, and breath you take involves a brilliant dance of molecular compounds. Unveil the formulas, secrets, and applications of 200 common substances shaping our world.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl text-left mt-6">
+            <div class="glass-card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">🧪</div>
+                    <h3 class="text-2xl font-semibold text-white mb-2">200 Chemicals Encyclopedia</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Search, browse, and filter through 200 real chemical substances found in foods, cosmetics, medicines, and household cleaning kits.</p>
+                </div>
+                <a href="chemicals.html" class="mt-8 inline-block text-center bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 px-6 rounded-xl transition duration-300 shadow-lg shadow-blue-600/20">Explore Compendium</a>
+            </div>
+            <div class="glass-card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Interactive Smart Quiz</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Test your daily-life chemistry instincts! Face real-world scenario questions and get instant rich dynamic feedback with hints.</p>
+                </div>
+                <a href="quiz.html" class="mt-8 inline-block text-center bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-3 px-6 rounded-xl transition duration-300 shadow-lg shadow-emerald-600/20">Launch Quiz Engine</a>
+            </div>
+            <div class="glass-card p-8 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">🏢</div>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Our Mission Strategy</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Learn more about our dedicated laboratory and application development squad bringing science literacy directly to non-native learners.</p>
+                </div>
+                <a href="about.html" class="mt-8 inline-block text-center bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-xl transition duration-300">About Our Group</a>
+            </div>
+        </div>
+    </main>
+    <footer class="py-8 text-center text-sm text-gray-600 border-t border-white/5">
+        &copy; 2026 ChemSphere Global Hub. All rights reserved.
+    </footer>
+</body>
+</html>
+```
